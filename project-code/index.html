@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+<body>
+
+  <h3>Password Generator</h3>
+
+  <div class="output-ctn">
+    <h2 id="password-output">P4$5W0rD!</h2>
+    <button class="clipboard-btn">
+      <img class="clipboard-img" src="./assets/images/icon-copy.svg" alt="&#128203;">
+    </button>
+  </div>
+
+  <form class="password-settings">
+    <label for="char-length">
+      <span>Character Length</span>
+      <output for="char-length">50</output>
+    </label>
+    <input type="range" name="char-length" id="char-length">
+    <label>
+      <input class="settings-checkbox" type="checkbox" name="include-uppercase-letters" id="include-uppercase-letters" checked>
+      <span>Include Uppercase Letters</span>
+    </label>
+    <label>
+      <input class="settings-checkbox" type="checkbox" name="include-lowercase-letters" id="include-lowercase-letters" checked>
+      <span>Include Uppercase Letters</span>
+    </label>
+    <label>
+      <input class="settings-checkbox" type="checkbox" name="include-numbers" id="include-numbers" checked>
+      <span>Include Uppercase Letters</span>
+    </label>
+    <label>
+      <input class="settings-checkbox" type="checkbox" name="include-symbols" id="include-symbols">
+      <span>Include Uppercase Letters</span>
+    </label>
+
+    <div class="strength-ctn">
+      <p>STRENGTH</p>
+      <span class="strength-output">
+        <span class="strength-output-txt">TOO WEAK!</span>
+        <span class="strength-output-progress">
+          <span class="strength-output-field"></span>
+          <span class="strength-output-field"></span>
+          <span class="strength-output-field"></span>
+          <span class="strength-output-field"></span>
+        </span>
+      </span>
+    </div>
+
+    <button type="submit">
+      GENERATE
+      <img src="./assets/images/icon-arrow-right.svg" alt="&rarr;">
+    </button>
+  </form>
+
+</body>
+</html>
