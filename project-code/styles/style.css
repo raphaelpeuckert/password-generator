@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../assets/fonts/JetBrainsMono-VariableFont_wght.ttf")
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'JetBrains Mono', sans-serif;
+
+    --off-white: #e6e5ea;
+    --grey: #817d92;
+    --dark-grey: #25242c;
+    --very-dark-grey: #18171f;
+
+    --light-green: #a4ffaf;
+    --red: #f64a4a;
+    --orange: #fb7c58;
+    --yellow: #f8cd65;
+
+    --fs-heading-l: 3.2rem;
+    --fs-heading-m: 2.4rem;
+    --fs-body: 1.8rem; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+head, script {
+    display: none;
+}
+
+body {
+    display: flow-root;
+    min-height: 100vh;
+    background: linear-gradient(#14131B, #08070B) no-repeat;
+    color: var(--off-white);
+}
+
+#content-ctn {
+    margin-top: 12rem;
+    margin-inline: auto;
+    max-width: 540px;
+}
+
+
+.page-title {
+    text-align: center;
+    color: var(--grey);
+    font-size: var(--fs-heading-m);
+}
+
+.output-ctn {
+    margin-top: 3rem;
+    background-color: var(--dark-grey);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#password-output {
+    font-size: var(--fs-heading-l);
+}
+
+.clipboard-btn {
+    background: none;
+    border: none;
+}
+
+.clipboard-img {
+    color: #A4FFAF;
+    transition: color .2s ease-out;
+}
+
+.clipboard-btn:hover {
+    cursor: pointer;
+}
+
+.clipboard-btn:hover .clipboard-img {
+    color: white;
+}
+
+.password-settings {
+    margin-top: 2.4rem;
+    padding: 2.4rem 3.2rem;
+    background-color: var(--dark-grey);
+}
+
+.char-length-ctn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.char-length-ctn span {
+    font-size: var(--fs-body);
+}
+
+.char-length-ctn output {
+    font-size: var(--fs-heading-l);
+    color: var(--light-green);
+}
+
+#char-length-input {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+/* SLIDER TRACK STYLING */
+#char-length-input::-webkit-slider-runnable-track {
+    background: var(--very-dark-grey);
+    height: 0.8rem;
+    box-shadow: inset 100% 0 0 0 var(--light-green);
+}
+#char-length-input::-moz-range-track  {
+    background: var(--very-dark-grey);
+    height: 0.8rem;
+}
+/* SLIDER THUMB STYLING */
+#char-length-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--very-dark-grey);
+    border: 2px solid var(--light-green);
+    margin-top: -12px;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+}
+#char-length-input::-moz-range-thumb {
+    background-color: var(--very-dark-grey);
+    border: 2px solid var(--light-green);
+    margin-top: -12px;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    
+}
