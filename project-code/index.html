@@ -25,26 +25,28 @@
     <form class="password-settings">
       <label class="char-length-ctn" for="char-length">
         <span>Character Length</span>
-        <output for="char-length">50</output>
+        <output for="char-length" class="char-length-output">10</output>
       </label>
-      <input type="range" name="char-length" id="char-length-input" min="1" max="20">
-      <label>
-        <input class="settings-checkbox" type="checkbox" name="include-uppercase-letters" id="include-uppercase-letters" checked>
-        <span>Include Uppercase Letters</span>
-      </label>
-      <label>
-        <input class="settings-checkbox" type="checkbox" name="include-lowercase-letters" id="include-lowercase-letters" checked>
-        <span>Include Uppercase Letters</span>
-      </label>
-      <label>
-        <input class="settings-checkbox" type="checkbox" name="include-numbers" id="include-numbers" checked>
-        <span>Include Uppercase Letters</span>
-      </label>
-      <label>
-        <input class="settings-checkbox" type="checkbox" name="include-symbols" id="include-symbols">
-        <span>Include Uppercase Letters</span>
-      </label>
-  
+      <input type="range" name="char-length" id="char-length-input" min="1" max="20" value="10">
+      <div class="checkbox-ctn">
+        <label>
+          <input class="settings-checkbox" type="checkbox" name="include-uppercase-letters" id="include-uppercase-letters" checked>
+          <span>Include Uppercase Letters</span>
+        </label>
+        <label>
+          <input class="settings-checkbox" type="checkbox" name="include-lowercase-letters" id="include-lowercase-letters" checked>
+          <span>Include Lowercase Letters</span>
+        </label>
+        <label>
+          <input class="settings-checkbox" type="checkbox" name="include-numbers" id="include-numbers" checked>
+          <span>Include Numbers</span>
+        </label>
+        <label>
+          <input class="settings-checkbox" type="checkbox" name="include-symbols" id="include-symbols">
+          <span>Include Symbols</span>
+        </label>
+      </div>
+      
       <div class="strength-ctn">
         <p>STRENGTH</p>
         <span class="strength-output">
@@ -58,9 +60,9 @@
         </span>
       </div>
   
-      <button type="submit">
+      <button class="generate-btn" type="submit">
         GENERATE
-        <img src="./assets/images/icon-arrow-right.svg" alt="&rarr;">
+        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg>
       </button>
     </form>
 
