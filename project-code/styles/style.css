@@ -64,6 +64,19 @@ body {
     font-size: var(--fs-heading-l);
 }
 
+.copy-ctn {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.copied-txt {
+    opacity: 0;
+    color: var(--light-green);
+    font-size: var(--fs-body);
+    transition: opacity .1s ease-out;
+}
+
 .clipboard-btn {
     background: none;
     border: none;
