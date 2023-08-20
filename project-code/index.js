@@ -124,16 +124,16 @@ function evaluatePasswordStrength(passwordLength, includeUppercase, includeLower
     }
 
     if (cumulativeScore <= 3) {
-        passwordStrength = "too weak";
+        passwordStrength = "TOO WEAK";
         changeOutputFields(1, 'red');
     } else if (cumulativeScore <= 6) {
-        passwordStrength = "weak";
+        passwordStrength = "WEAK";
         changeOutputFields(2, 'orange');
     } else if (cumulativeScore <= 9) {
-        passwordStrength = "medium";
+        passwordStrength = "MEDIUM";
         changeOutputFields(3, 'yellow');
     } else {
-        passwordStrength = "strong";
+        passwordStrength = "STRONG";
         changeOutputFields(4, 'green');
     }
 

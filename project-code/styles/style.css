@@ -223,6 +223,7 @@ body {
 .strength-output {
     display: flex;
     gap: 1.6rem;
+    align-items: center;
 }
 
 .strength-output-txt {
@@ -281,4 +282,43 @@ body {
     cursor: pointer;
     background: transparent;
     color: var(--light-green);
+}
+
+@media screen and (max-width: 540px) {
+    #content-ctn {
+        margin-top: 6.4rem;
+        margin-inline: 1.6rem;
+    }
+    .page-title {
+        font-size: var(--fs-body);
+    }
+    .output-ctn {
+        margin-top: 1.6rem;
+        padding: 1.6rem;
+    }
+    #password-output {
+        font-size: var(--fs-heading-m);
+    }
+    .password-settings {
+        margin-top: 1.6rem;
+        padding: 1.6rem;
+    }
+    .char-length-ctn output {
+        font-size: var(--fs-heading-m);
+    }
+    #char-length-input {
+        margin-top: 1.8rem;
+    }
+    .strength-ctn {
+        padding: 1.6rem;
+    }
+    .strength-output-txt {
+        font-size: var(--fs-body);
+    }
+    .generate-btn {
+        margin-top: 1.6rem;
+    }
+    .strength-output-field {
+        width: .8rem;
+    }
 }
